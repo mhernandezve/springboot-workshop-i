@@ -7,7 +7,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.boot.CommandLineRunner;
-import org.test.tvseries.repository.TvSerieRepository;
+import org.test.tvseries.repository.TvSeriesRepository;
 
 import static org.junit.Assert.assertThat;
 
@@ -17,7 +17,7 @@ import static org.hamcrest.Matchers.instanceOf;
 public class StartupRunnerTest {
 
   @Mock
-  private TvSerieRepository repository;
+  private TvSeriesRepository repository;
 
   @InjectMocks
   private StartupRunner startupRunner = new StartupRunner();

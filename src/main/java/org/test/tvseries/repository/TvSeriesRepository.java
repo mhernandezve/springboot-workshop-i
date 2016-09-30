@@ -5,6 +5,8 @@ import org.springframework.stereotype.Repository;
 import org.test.tvseries.entity.TvSerie;
 
 @Repository
-public interface TvSerieRepository extends CrudRepository<TvSerie, Long>{
+public interface TvSeriesRepository extends CrudRepository<TvSerie, Long>{
+
+	TvSerie findByName(String name);
 
 }

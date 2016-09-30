@@ -6,15 +6,15 @@ import org.junit.Test;
 import org.springframework.data.repository.CrudRepository;
 import org.test.tvseries.entity.TvSerie;
 
-public class TvSerieRepositoryTest {
+public class TvSeriesRepositoryTest {
 
   @Test
   public void shouldExtendFromCrudRepository(){
     Assert.assertThat(constructInstanceOfTvSerieRepository(), Matchers.instanceOf(CrudRepository.class));
   }
 
-  private TvSerieRepository constructInstanceOfTvSerieRepository() {
-    return new TvSerieRepository() {
+  private TvSeriesRepository constructInstanceOfTvSerieRepository() {
+    return new TvSeriesRepository() {
 
       @Override
       public <S extends TvSerie> S save(S entity) {
@@ -80,6 +80,11 @@ public class TvSerieRepositoryTest {
       public void deleteAll() {
         // TODO Auto-generated method stub
 
+      }
+
+      @Override
+      public TvSerie findByName(String name) {
+        return null;
       }
     };
   }
