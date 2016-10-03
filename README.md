@@ -6,7 +6,8 @@ By FaustoC
 
 ### Generating a project
 
-Generate a gradle project from [Spring site]( https://start.spring.io )
+Generate a gradle project from https://start.spring.io
+
 Suggested values to be filled in the form:
 * **Spring Boot 2.0.0**
 * Group: **org.test**
@@ -146,5 +147,9 @@ dependencies {
 @RepositoryRestResource
 public interface ActorRepository extends
                  PagingAndSortingRepository<Actor, Long> {}
-
+```
+# Feedback?
+Where are the tests?
+```
+git clone https://github.com/faustocv/springboot-workshop-i.git
 ```
