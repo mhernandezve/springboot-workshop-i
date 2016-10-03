@@ -29,7 +29,7 @@ public class TvSeriesApplicationIntegrationTest {
 
   @Test
   public void shouldReturnAnEmptyListGivenGetAllActorsRequest(){
-    ResponseEntity<String> response = restTemplate.getForEntity("/actors", String.class);
+    ResponseEntity<String> response = restTemplate.getForEntity("/characters", String.class);
     Assert.assertThat(response.getStatusCode(), Matchers.is(HttpStatus.OK));
   }
 }
