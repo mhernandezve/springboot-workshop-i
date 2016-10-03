@@ -1,5 +1,7 @@
 package org.test.tvseries.integration;
 
+import java.util.List;
+
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
@@ -19,7 +22,7 @@ public class TvSeriesApplicationIntegrationTest {
 
   @Test
   public void shouldReturnAnEmptyListGivenGetAllTvSeriesRequest(){
-    String tvSeries = restTemplate.getForObject("/test/tvseries", String.class);
-    Assert.assertThat(tvSeries , Matchers.is("[]"));
+    ResponseEntity<List> tvSeries = restTemplate.getForEntity("/test/tvseries", List.class);
+    Assert.assertThat(tvSeries.getBody().size(), Matchers.is(1));
   }
 }

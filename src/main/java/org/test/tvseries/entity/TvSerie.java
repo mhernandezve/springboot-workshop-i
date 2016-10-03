@@ -3,6 +3,7 @@ package org.test.tvseries.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,7 +16,7 @@ public class TvSerie {
   @GeneratedValue
   private Integer id;
   private String name;
-  @ManyToMany
+  @ManyToMany(cascade=CascadeType.ALL)
   private List<Actor> actors;
 
   public TvSerie(String name) {
