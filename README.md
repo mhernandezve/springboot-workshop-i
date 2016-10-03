@@ -30,12 +30,14 @@ After that, run:
 ### Starters
 **Spring Boot starters** are a sets of libraries that includes everything for specific funcionalities.
 
-| Popular Starters         | Description                                            |
-| ---                      | ---                                                    |
-| spring-boot-starter      | Base starter. It's a dependency of the other starters. |
-| spring-boot-starter-jdbc | For database connections based on JDBC                 |
-| spring-boot-starter-test | For testing, stubbing and mocking                      |
-| ...                      | ...                                                    |
+| Popular Starters                        | Description                                                      |
+| ---                                     | ---                                                              |
+| <sub>spring-boot-starter</sub>          | <sub>Base starter. It's a dependency of the other starters</sub> |
+| <sub>spring-boot-starter-jdbc</sub>     | <sub>For database connections based on JDBC</sub>                |
+| <sub>spring-boot-starter-test</sub>     | <sub>For testing, stubbing and mocking</sub>                     |
+| <sub>spring-boot-starter-security</sub> | <sub>Depedencies for spring-security</sub>                       |
+| <sub>spring-boot-starter-social-x</sub> | <sub>x -> {Facebook, Twitter, LinkedIn}</sub>                    |
+| ...                                     | ...                                                              |
 
 Example *spring.profile* of `spring-boot-starter-test`:
 ```
