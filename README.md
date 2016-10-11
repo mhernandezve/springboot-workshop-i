@@ -30,7 +30,7 @@ After that, run:
 ### Starters
 **Spring Boot starters** are a sets of libraries that includes everything for specific funcionalities.
 
-| Popular Starters                        | Description                                                      |
+| Starters                        | Description                                                      |
 | ---                                     | ---                                                              |
 | <sub>spring-boot-starter</sub>          | <sub>Base starter. It's a dependency of the other starters</sub> |
 | <sub>spring-boot-starter-jdbc</sub>     | <sub>For database connections based on JDBC</sub>                |
@@ -150,8 +150,12 @@ dependencies {
 public interface ActorRepository extends
                  PagingAndSortingRepository<Actor, Long> {}
 ```
-# Feedback?
+# More info
 Where are the tests?
 ```
 git clone https://github.com/faustocv/springboot-workshop-i.git
+```
+Documentation
+```
+http://docs.spring.io/spring-boot
 ```
